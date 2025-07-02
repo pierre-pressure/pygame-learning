@@ -12,7 +12,7 @@ FPS = 60
 # font für Textanzeige notwendig
 WINDOW_WIDTH = 800
 WINDOW_HEIGHT = 600
-font = pygame.font.Font(None, 36) # Standard-Font gr.36
+font = pygame.font.Font(None, 36)  # Standard-Font gr.36
 
 ## Fenster erstellen
 # screen ist die "Leinwand"
@@ -32,15 +32,15 @@ while running:
         if event.type == pygame.QUIT:  # Event: X-Button gedrückt
             running = False
     # Phase 2: Update | Spielelogik
-    
+
     # Phase 3: Draw
     # flip: tauscht die unsichtbare "Mal-Leinwand" mit der sichtbaren "Anzeige-Leinwand", sodass das fertige Bild ohne Flackern angezeigt wird
     # Unsichtbare Leinwand: Back Buffer | Sichtbare Leinwand: Front Buffer
     screen.fill((0, 0, 0))  # RGB
     # FPS Anzeige
-    fps = clock.get_fps() # Aktuelle FPS(durchschnittswert) holen
-    fps_text = font.render(f"FPS: {fps:.0f}", True, (255, 255, 255)) # Weißer, formatierter Text | 1f wäre 60,x FPS
-    screen.blit(fps_text, (10, 10)) # An Textposition zeichnen 
+    fps = clock.get_fps()  # Aktuelle FPS(durchschnittswert) holen
+    fps_text = font.render(f"FPS: {fps:.0f}", True, (255, 255, 255))  # Weißer, formatierter Text | 1f wäre 60,x FPS
+    screen.blit(fps_text, (10, 10))  # An Textposition zeichnen
     pygame.display.flip()  # Alles anzeigen
 
 # Pygame sauber beenden
