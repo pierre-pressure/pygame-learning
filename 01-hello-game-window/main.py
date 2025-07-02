@@ -15,10 +15,11 @@ pygame.display.set_caption("Mein erstes Pygame Fenster")
 
 running = True
 while running:
-    dt = clock.tick(FPS)
+    dt = clock.tick(FPS) 
     for event in pygame.event.get():
-        if event.type == pygame.QUIT:  
-            running = False
+        match event.type:
+            case pygame.QUIT: 
+                running = False
     screen.fill((0, 0, 0))
     fps = clock.get_fps()  
     fps_text = font.render(f"FPS: {fps:.0f}", True, (255, 255, 255))

@@ -32,8 +32,9 @@ while running:
         match event.type:
             case pygame.QUIT: # Event: X-Button gedrückt
                 running = False
+# ------------------------------------------------------------------------------------------------
     # Phase 2: Update | Spielelogik
-    
+# ------------------------------------------------------------------------------------------------
     # Phase 3: Draw
     # flip: tauscht die unsichtbare "Mal-Leinwand" mit der sichtbaren "Anzeige-Leinwand", sodass das fertige Bild ohne Flackern angezeigt wird
     # Unsichtbare Leinwand: Back Buffer | Sichtbare Leinwand: Front Buffer
