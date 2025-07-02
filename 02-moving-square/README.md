@@ -48,6 +48,3 @@ python main.py
 - Match/Case für Event-Handling
 - Saubere Code-Struktur
 - FPS-Monitoring
-
----
-*Next: Projekt 3 wird Collision Detection mit Wänden hinzufügen*
