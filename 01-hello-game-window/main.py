@@ -39,7 +39,7 @@ while running:
     screen.fill((0, 0, 0))  # RGB
     # FPS Anzeige
     fps = clock.get_fps() # Aktuelle FPS(durchschnittswert) holen
-    fps_text = font.render(f"FPS: {fps:.1f}", True, (255, 255, 255)) # Weißer, formatierter Text
+    fps_text = font.render(f"FPS: {fps:.0f}", True, (255, 255, 255)) # Weißer, formatierter Text | 1f wäre 60,x FPS
     screen.blit(fps_text, (10, 10)) # An Textposition zeichnen 
     pygame.display.flip()  # Alles anzeigen
 
